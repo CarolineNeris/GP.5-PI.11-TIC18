@@ -1,7 +1,0 @@
-##Coesão da função maxmin: possui a responsabilidade é encontrar o valor máximo e mínimo em um vetor
- de inteiros. Ela não realiza tarefas não relacionadas e mantém um foco claro em seu propósito. Acredito
- que seja uma função coesa.
- ##Acoplamento: tem um acoplamento que considero baixo, pois não depende de outras funções específicas em seu código.
- Ela recebe o vetor como argumento e não está diretamente vinculada a outros módulos ou funções. No entanto, ela 
- depende dos tipos de dados passados como argumentos (um vetor de inteiros) e das variáveis externas max e min, 
- que são atualizadas dentro da função. Isso significa que há algum grau de acoplamento, mas não é excessivamente alto.
