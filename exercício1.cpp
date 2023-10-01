@@ -3,29 +3,29 @@ using namespace std;
 
 
 void maxmin(int vetor[], int n, int &max, int &min) {
-    max = min = vetor[0];                               // Inicialize max e min com o primeiro elemento do vetor
-    for (int i = 0; i < n; i++) {                       // Use "int i" para declarar a variável e a condição correta "i < n"
-        if (vetor[i] > max) {                           // Corrija o uso do operador de comparação
-            max = vetor[i];                             // Atualize o valor máximo
+    max = min = vetor[0];                               
+    for (int i = 0; i < n; i++) {                       
+        if (vetor[i] > max) {                           
+            max = vetor[i];                             
         }
-        if (vetor[i] < min) {                           // Corrija o uso do operador de comparação
-            min = vetor[i];                             // Atualize o valor mínimo
+        if (vetor[i] < min) {                           
+            min = vetor[i];                            
         }
     }
 }
 
-int main() {                                            // Deve ser "main" em vez de "mais"
+int main() {                                            
     int max, min, n;
     cout << "Informe o tamanho do vetor: " << endl;
     cin >> n;
-    int vetor[n];                                       // Declare o vetor com o tamanho informado pelo usuário
+    int vetor[n];                                       
 
     cout << "Informe os valores do vetor:" << endl;
     for (int i = 0; i < n; i++) {
-        cin >> vetor[i];                                // Preencha o vetor com valores informados pelo usuário
+        cin >> vetor[i];                                
     }
 
-    maxmin(vetor, n, max, min);                         // Passe o vetor como argumento
+    maxmin(vetor, n, max, min);                         
 
     cout << "Máximo: " << max << endl;
     cout << "Mínimo: " << min << endl;
