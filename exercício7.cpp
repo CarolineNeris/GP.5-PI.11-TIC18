@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 void multiplica_por_n(int *vet, int qtde, int n) {
     for (int i = 0; i < qtde; ++i) {
